@@ -1,25 +1,32 @@
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 body {
-  background: #333;
+  background: #b7d7e8;
   margin: 0;
   display: grid;
   padding: 3em;
   place-items: center;
+  font-size: 1.5rem;
 }
 .boxes {
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
   grid-template-rows: auto;
 }
 .box {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 90%;
   h1 {
-    font-size: 20px;
+    font-size: 30px;
+    margin: 0 0 1rem 0;
+  }
+  h4 {
+    font-size: 30px;
     margin: 0 0 1rem 0;
   }
   .content {
@@ -35,15 +42,15 @@ body {
   }
 }
 .button {
-  background: hotpink;
+  background: #3a86ac;
   border: 1px solid transparent;
   color: white;
   margin-right: 1em;
-  padding: .25em .75em;
-  transition: all .25s ease-in;
+  padding: 0.25em 0.75em;
+  transition: all 0.25s ease-in;
   &:hover {
     background: white;
-    border: 1px solid hotpink;
+    border: 1px solid 33a86ac;
     color: #333;
   }
 }
